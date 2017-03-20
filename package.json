@@ -1,0 +1,38 @@
+{
+    "name": "gulp4_basic",
+    "version": "1.0.0",
+    "description": "",
+    "main": "gulpfile.js",
+    "dependencies": {},
+    "devDependencies": {
+        "autoprefixer": "^6.7.7",
+        "browser-sync": "^2.18.8",
+        "del": "^2.2.2",
+        "gulp": "github:gulpjs/gulp#4.0",
+        "gulp-cache": "^0.4.6",
+        "gulp-clean-css": "^3.0.3",
+        "gulp-concat": "^2.6.1",
+        "gulp-favicons": "^2.2.7",
+        "gulp-if": "^2.0.2",
+        "gulp-image": "^2.7.5",
+        "gulp-include": "^2.3.1",
+        "gulp-load-plugins": "^1.5.0",
+        "gulp-notify": "^3.0.0",
+        "gulp-plumber": "^1.1.0",
+        "gulp-postcss": "^6.3.0",
+        "gulp-sass": "^3.1.0",
+        "gulp-smushit": "^1.2.0",
+        "gulp-uglify": "^2.1.0",
+        "gulp-useref": "^3.1.2",
+        "lost": "^8.0.0",
+        "postcss-assets": "^4.1.0",
+        "postcss-sorting": "^2.0.1",
+        "postcss-use": "^2.3.0",
+        "rucksack-css": "^0.9.1"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "edalis",
+    "license": "ISC"
+}

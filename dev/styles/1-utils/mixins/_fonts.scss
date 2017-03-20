@@ -1,0 +1,17 @@
+// https://github.com/agragregra/optimizedhtml-start-template/blob/master/app/sass/_mixins/_font-face.sass
+@mixin font-face($font-family, $file-path, $weight: normal, $style: normal, $asset-pipeline: false) {
+    @font-face {
+        font-family: $font-family;
+
+        @if $asset-pipeline == false {
+            src: url('#{$file-path}.eot');
+            src: url('#{$file-path}.eot?#iefix') format('embedded-opentype'), url('#{$file-path}.woff') format('woff'), url('#{$file-path}.ttf') format('truetype');
+        } @else {
+            src: font-url('#{$file-path}.eot');
+            src: font-url('#{$file-path}.eot?#iefix') format('embedded-opentype'), font-url('#{$file-path}.woff') format('woff'), font-url('#{$file-path}.ttf') format('truetype');
+        }
+
+        font-weight: $weight;
+        font-style: $style;
+    }
+}

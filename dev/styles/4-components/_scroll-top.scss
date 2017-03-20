@@ -1,0 +1,40 @@
+/*! Scroll Top Button
+========================================================= */
+.scroll-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(52, 73, 94, .3);
+    display: none;
+    transition: all 0.7s ease;
+    animation: fade-in 1s ease;
+
+    &::before {
+        @include center-x;
+        content: '\2191';
+        font-size: 28px;
+        color: rgba(255, 255, 255, .7);
+        transition: all 0.7s ease;
+    }
+
+    &:hover {
+        cursor: pointer;
+        background-color: rgba(52, 73, 94, .7);
+
+        &::before {
+            color: #fff;
+        }
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

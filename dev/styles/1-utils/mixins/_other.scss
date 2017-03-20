@@ -1,0 +1,49 @@
+@mixin bg-img($url, $color: transparent, $x: center, $y: center, $repeat: no-repeat) {
+    @if $color == transparent {
+        background: url($url) $x $y $repeat;
+        background-size: cover;
+    } @else {
+        background: url($url) $x $y $repeat $color;
+        background-size: cover;
+    }
+}
+
+@mixin overlay($color: #000, $opacity: 0.3) {
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        content: '';
+        background-color: rgba($color, $opacity);
+    }
+}
+
+@mixin overlay-img($color: transparent, $img: 'overlay.png') {
+    @if $color == transparent {
+        &::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            content: '';
+            background: resolve($img);
+        }
+    } @else {
+        &::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            content: '';
+            background: resolve($img) $color;
+        }
+    }
+}
+
+@mixin mq($point) {
+    @media only screen and (max-width: $point + px) { @content; }
+}

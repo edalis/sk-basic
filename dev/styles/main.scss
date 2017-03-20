@@ -1,0 +1,33 @@
+@use lost;           // LostGrid is a grid system built in PostCSS: http://lostgrid.org/docs.html
+@use rucksack-css;   // Rucksack PostCSS Mixins Library: https://simplaio.github.io/rucksack/docs/
+@use postcss-assets; // PostCSS asset manager for CSS: https://github.com/assetsjs/postcss-assets
+
+@import '1-utils/vars';
+@import '1-utils/functions';
+@import '1-utils/mixins';
+@import '1-utils/vendors';
+
+/*! BASIC STYLES
+========================================================= */
+@import '2-basic/fonts';
+@import '2-basic/base';
+
+/*! BLOCKS STYLES
+========================================================= */
+// @import '3-blocks/header';
+// @import '3-blocks/s-name';
+// @import '3-blocks/footer';
+
+/*! COMPONENTS STYLES
+========================================================= */
+// @import '4-components/nav';
+// @import '4-components/forms';
+@import '4-components/scroll-top';
+@import '4-components/upgrade-browser';
+
+/*! PAGES STYLES
+========================================================= */
+@import '5-pages/404';
+
+// @import '6-vendors/';
+// @import '7-queries/media';

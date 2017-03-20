@@ -1,0 +1,24 @@
+// https://css-tricks.com/snippets/sass/px-to-em-functions/
+$browser-context: $font-size;
+
+// Example em(16) or em(16px) -> 1em
+@function em($pixels, $context: $browser-context) {
+    @if (unitless($pixels)) {
+        $pixels: $pixels * 1px;
+    }
+    @if (unitless($context)) {
+        $context: $context * 1px;
+    }
+    @return $pixels / $context * 1em;
+}
+
+// Example rem(16) or rem(16px) -> 1rem
+@function rem($pixels, $context: $browser-context) {
+    @if (unitless($pixels)) {
+        $pixels: $pixels * 1px;
+    }
+    @if (unitless($context)) {
+        $context: $context * 1px;
+    }
+    @return $pixels / $context * 1rem;
+}

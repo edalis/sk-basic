@@ -1,0 +1,36 @@
+@mixin circle($size, $color: darkred) {
+    width: $size;
+    height: $size;
+    border-radius: 50%;
+    background-color: $color;
+}
+
+@mixin triangle($size, $orientation, $color: darkred) {
+    display: inline-block;
+    height: 0;
+    width: 0;
+
+    @if $orientation == up {
+        border-left: $size solid transparent;
+        border-right: $size solid transparent;
+        border-bottom: $size solid $color;
+    }
+
+    @if $orientation == right {
+        border-top: $size solid transparent;
+        border-bottom: $size solid transparent;
+        border-left: $size solid $color;
+    }
+
+    @if $orientation == down {
+        border-left: $size solid transparent;
+        border-right: $size solid transparent;
+        border-top: $size solid $color;
+    }
+
+    @if $orientation == left {
+        border-top: $size solid transparent;
+        border-bottom: $size solid transparent;
+        border-right: $size solid $color;
+    }
+}

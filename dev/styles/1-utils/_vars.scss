@@ -1,0 +1,35 @@
+// MAIN Settings (main.scss)
+$site-width:             1200px;                    // Site width (.wrapper)
+$site-padding:           15px;                      // Site padding-left, padding-right (.wrapper)
+$site-bg:                transparent;               // Site Background
+
+$color-accent:           #e67e22;                 // Color for Accent
+
+$font-family:            'Roboto', sans-serif;      // Main Font Family
+$font-family--title:     'Roboto Bold', sans-serif; // Font Family for Titles
+
+$font-size:              16px;                      // Main Font Size
+$font-size--title:       20px;                      // Font Size for Titles
+
+$font-color:             #9c9c9c;                 // Main Font Color
+$font-color--title:      $color-accent;             // Font Color for Titles
+
+$link-color:             #9c9c9c;                 // Main Link Color
+$link-color--hover:      $color-accent;             // Link Color Hover
+
+// PAGE 404 Settings (_404.scss)
+$site-bg-404:            #2c3e50;                 // Site Background
+
+$color-accent-404:       #e67e22;                 // Color for Accent
+
+$font-family-404:        $font-family;              // Main Font Family
+$font-family-404--title: $font-family--title;       // Font Family for Titles
+
+$font-size-404:          $font-size;                // Main Font Size
+$font-size-404--title:   130px;                     // Font Size for Titles
+
+$font-color-404:         #bdc3c7;                 // Main Font Color
+$font-color-404--title:  $color-accent-404;         // Font Color for Titles
+
+$link-color-404:         #ecf0f1;                 // Main Link Color
+$link-color-404--hover:  $color-accent-404;         // Link Color Hover

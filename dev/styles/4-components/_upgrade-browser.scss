@@ -1,0 +1,47 @@
+/*! Upgrade Browser
+========================================================= */
+.upgrade-browser {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #e74c3c;
+    color: #ecf0f1;
+    z-index: 100;
+
+    &__link { color: #fff; }
+
+    &__message {
+        padding: 0 10px;
+
+        @media only screen and (max-width: 480px) {
+            font-size: 14px;
+            padding-top: 20px;
+        }
+    }
+
+    &__close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, .7);
+        margin-left: 10px;
+        margin-bottom: 10px;
+        font-size: 14px;
+        line-height: 20px;
+        color: #e74c3c;
+
+        &:hover {
+            cursor: pointer;
+            background-color: #fff;
+        }
+
+        @media only screen and (max-width: 480px) {
+            right: 50%;
+            margin-right: -10px;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+$default-widht: $site-width - $site-padding * 2;
+@mixin container($width: $default-widht, $padding: 0) {
+    max-width: $width;
+    margin-left: auto;
+    margin-right: auto;
+
+    @if $padding != 0 {
+        padding-left: $padding;
+        padding-right: $padding;
+    }
+}
+
+@mixin center($position: absolute) {
+    position: $position;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin center-x($position: absolute) {
+    position: $position;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@mixin center-y($position: absolute) {
+    position: $position;
+    top: 50%;
+    transform: translateY(-50%);
+}
